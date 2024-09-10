@@ -63,7 +63,7 @@ body {
   color: #00B7EC;
 }
 
-.header__button:hover{
+.header__button:hover {
   color: rgb(25, 152, 213);
 }
 
@@ -113,7 +113,7 @@ body {
   line-height: 25px;
 }
 
-.title__button-line-button_green:hover{
+.title__button-line-button_green:hover {
   background: rgb(119, 186, 4);
 }
 
@@ -129,7 +129,7 @@ body {
   line-height: 25px;
 }
 
-.title__button-line-button_white:hover{
+.title__button-line-button_white:hover {
   color: rgb(119, 186, 4);
 }
 
@@ -180,7 +180,7 @@ body {
   padding: 0 40px;
 }
 
-.about-us__button-blue:hover{
+.about-us__button-blue:hover {
   background: rgb(25, 152, 213);
 }
 
@@ -196,7 +196,7 @@ body {
   line-height: 25px;
 }
 
-.about-us__button-white:hover{
+.about-us__button-white:hover {
   color: rgb(25, 152, 213);
 }
 
@@ -380,7 +380,7 @@ body {
   line-height: 25px;
 }
 
-.practica__button:hover{
+.practica__button:hover {
   background: rgb(119, 186, 4);
 }
 
@@ -482,6 +482,20 @@ body {
   margin-bottom: 6px;
 }
 
+.form__text-input:valid{
+  border: 2px solid rgb(155, 204, 55);
+  background-image: url(../img/okay_icon.png);
+  background-repeat: no-repeat;
+  background-position: right 20px top 50%;
+}
+
+.form__text-input:invalid{
+  border: 2px solid rgb(253, 117, 131);
+  background-image: url(../img/error_icon.png);
+  background-repeat: no-repeat;
+  background-position: right 20px top 50%;
+}
+
 .form__text {
   margin-top: 11px;
   font-size: 18px;
@@ -535,7 +549,7 @@ body {
   text-align: center;
 }
 
-.form__submit-button:hover{
+.form__submit-button:hover {
   background: rgb(119, 186, 4);
 }
 
@@ -713,11 +727,11 @@ body {
     line-height: 38px;
   }
 
-  .form__row-container{
+  .form__row-container {
     flex-direction: column;
   }
 
-  .form__file-input-button{
+  .form__file-input-button {
     width: 100%;
     justify-content: center;
   }
