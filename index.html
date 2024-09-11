@@ -9,14 +9,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
-  <link rel="icon" href="./img/header_icon.png">
+  <link rel="icon" href="./img/header_icon.svg">
   <title>Gendalf</title>
 </head>
 
 <body>
   <header>
     <div class="header__desctop">
-      <img src="./img/header_icon.png" alt="Gendalf" class="header__icon">
+      <img src="./img/header_icon.svg" alt="Gendalf" class="header__icon">
       <a href="" class="header__link">Профориентация</a>
       <a href="" class="header__link">Выбрать вакансию</a>
       <a href="" class="header__link">Карьера в ГЭНДАЛЬФ</a>
@@ -25,11 +25,22 @@
       <button class="header__button">Запись на собеседование</button>
     </div>
     <div class="header__mobile">
-      <a href="" class="header__link"><img src="./img/mobeile-1.png" alt="" class="header__mobile-likn"></a>
-      <a href="" class="header__link"><img src="./img/mobeile-2.png" alt="" class="header__mobile-likn"></a>
-      <a href="" class="header__link"><img src="./img/mobeile-3.png" alt="" class="header__mobile-likn"></a>
-      <a href="" class="header__link"><img src="./img/mobeile-4.png" alt="" class="header__mobile-likn"></a>
-      <a href="" class="header__link"><img src="./img/mobeile-5.png" alt="" class="header__mobile-likn"></a>
+      <div class="header__mobile-container">
+        <a href="" class="header__link"><img src="./img/mobeile-1.svg" alt="" class="header__mobile-likn"></a>
+        <a href="" class="header__link"><img src="./img/mobeile-2.svg" alt="" class="header__mobile-likn"></a>
+        <a href="" class="header__link"><img src="./img/mobeile-3.svg" alt="" class="header__mobile-likn"></a>
+        <a href="" class="header__link"><img src="./img/mobeile-4.svg" alt="" class="header__mobile-likn"></a>
+        <button id="burger" class="header__burger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <ul id="drop-list" class="header__burger-drop-list">
+        <li class="header__burger-drop-list-item"><a href="">Профориентация</a></li>
+        <li class="header__burger-drop-list-item"><a href="">Выбрать вакансию</a></li>
+        <li class="header__burger-drop-list-item"><a href="">Карьера в ГЭНДАЛЬФ</a></li>
+        <li class="header__burger-drop-list-item"><a href="">Стажерство</a></li>
+        <li class="header__burger-drop-list-item"><a href="">Отзывы</a></li>
+      </ul>
     </div>
   </header>
   <main>
@@ -224,6 +235,7 @@
       </form>
     </section>
   </main>
+  <script src="./js/scripts.js"></script>
 </body>
 
 </html>
