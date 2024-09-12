@@ -279,6 +279,8 @@ body {
   gap: 40px;
   overflow-x: scroll;
   height: fit-content;
+  scrollbar-width: none;
+
 }
 
 .values__value-container {
@@ -287,6 +289,11 @@ body {
   gap: 16px;
   display: flex;
   flex-direction: column;
+}
+
+.values__values-scroll-container.dragging .values__value-container{
+  cursor: grab;
+  user-select: none;
 }
 
 .values__image {
