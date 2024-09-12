@@ -27,7 +27,7 @@ const dragStartCaruselTwo = (e) => {
   caruselTwo.classList.add("dragging");
   startCaruselTwo = e.pageX;
   startScrollLeftCaruselTwo = caruselTwo.scrollLeft;
-} 
+}
 
 const draggingCaruselTwo = (e) => {
   if (!isDragging) return;
