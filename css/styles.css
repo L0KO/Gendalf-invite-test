@@ -357,7 +357,7 @@ body {
 
 .live-feed__scroll-container {
   display: flex;
-  padding: 0 45px;
+  padding: 5px 45px;
   justify-content: space-evenly;
   gap: 30px;
   height: max-content;
@@ -481,8 +481,20 @@ body {
   align-items: flex-start;
 }
 
+.answers__container summary {
+  list-style-image: url(../img/details-marker.svg);
+}
+
+.answers__container details[open] summary {
+  list-style-image: url(../img/details-marker-open.svg);
+}
+
 .answers__answer-container {
   margin-bottom: 30px;
+}
+
+.answers__answer-container.mobile {
+  display: none;
 }
 
 .answeres__title {
@@ -572,14 +584,14 @@ body {
 
 .form__text-input:valid {
   border: 2px solid rgb(155, 204, 55);
-  background-image: url(../img/okay_icon.png);
+  background-image: url(../img/okay-icon.svg);
   background-repeat: no-repeat;
   background-position: right 20px top 50%;
 }
 
 .form__text-input:invalid {
   border: 2px solid rgb(253, 117, 131);
-  background-image: url(../img/error_icon.png);
+  background-image: url(../img/error-icon.svg);
   background-repeat: no-repeat;
   background-position: right 20px top 50%;
 }
@@ -825,5 +837,13 @@ body {
   .form__file-input-button {
     width: 100%;
     justify-content: center;
+  }
+
+  .answers__answer-container.mobile {
+    display: block;
+  }
+
+  .answers__answer-container.desktop {
+    display: none;
   }
 }
