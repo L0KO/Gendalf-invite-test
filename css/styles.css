@@ -340,7 +340,7 @@ body {
 
 .live-feed {
   background-color: #E9E9E9;
-  padding: 37px 10px 47px 10px;
+  padding: 37px 10px 47px 40px;
   position: relative;
 }
 
@@ -358,6 +358,24 @@ body {
   justify-content: space-evenly;
   gap: 30px;
   height: max-content;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.live-feed__scroll-container.dragging{
+  scroll-behavior: auto;
+  scroll-snap-type: none;
+}
+
+.live-feed__scroll-container.no-transition{
+  scroll-behavior: auto;
+}
+
+.live-feed__scroll-container.dragging .live-feed__card{
+  cursor: grab;
+  user-select: none;
 }
 
 .live-feed__card {
@@ -372,6 +390,7 @@ body {
   padding-bottom: 25px;
   justify-content: space-between;
   gap: 10px;
+  scroll-snap-align: start;
 }
 
 .live-feed__card-image {
@@ -703,7 +722,6 @@ body {
   }
 
   .live-feed__scroll-container {
-    overflow-x: scroll;
     padding: 0 30px 15px 30px;
     gap: 50px;
   }
